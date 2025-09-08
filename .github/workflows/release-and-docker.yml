@@ -11,8 +11,11 @@ on:
       push_latest:
         description: "同时推送 latest 标签？"
         required: true
-        type: boolean
-        default: true
+        type: choice
+        options:
+          - "true"
+          - "false"
+        default: "true"
 
 permissions:
   contents: write
